@@ -1,0 +1,16 @@
+.header{
+  background-color: rgb(4, 123, 213);
+  color: rgb(255,225,53);
+  margin: 1%;
+  border-radius: 5px;
+}
+
+#logo {
+  padding: 0px 5px;
+  font-size: large;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.menu {
+  padding-right: 20px;
+}

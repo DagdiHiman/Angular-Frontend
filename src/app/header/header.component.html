@@ -1,0 +1,33 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+
+<mat-toolbar class="header">
+  <mat-toolbar-row fxLayoutAlign="space-between center">
+    <div fxLayout="row">
+      <button mat-button >
+        <mat-icon>home</mat-icon>
+        <span id="logo">FlipCart</span>
+      </button>
+      <div *ngIf="!deviceXs" class="buttons">
+        <button mat-button>Products</button>
+        <button mat-button>About</button>
+        <button mat-button>Login</button>
+      </div>
+    </div>
+    <div class="menu buttons">
+      <button mat-icon-button >
+        <mat-icon>shopping_cart</mat-icon>
+        <span *ngIf="!deviceXs">Cart</span>
+      </button>
+    </div>
+
+  </mat-toolbar-row>
+
+  <mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-around center" class="buttons">
+    <button mat-button>Products</button>
+    <button mat-button>Contact Us</button>
+    <button mat-button>About Us</button>
+  </mat-toolbar-row>
+</mat-toolbar>
